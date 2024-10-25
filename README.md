@@ -2,4 +2,6 @@
 
 This is my codec for the WM8731, written for an embedded project. Anyone who spent some time with this codec and the datasheet is aware of the idiosyncrasies of its register mapping. 
 
-I had a board with this codec from a manufacturer who should remain unnamed, and I wasn't able to get it to work. I spent hours upon hours with the datasheet and the codec, and still no luck. Eventually I found out there are some design issues with the board itself and it will not work as I was expecting. On one hand, I was frustrated about the spent time, otoh, the somewhat silver lining is that I became extremely familiar with the datasheet and the code I wrote. To make it clear, beisdes the board problems, the codec is perfectly fine, once the aforementioned idiosyncrasies are accounted for. 
+Drivers for this codec can be found online but I just couldn't get them to work with my board so I assumed those drivers were potentially somehow buggy. What was actually buggy was the brand new board, but I didn't know that, so I wrote this driver from scratch. Eventually I found out about the confusing hardware design and I gave up on that board. 
+
+I experimented a lot while writing the driver and probing with the scope anything I could on that board. As it so often happens, we learn a lot from things that don't work. 
